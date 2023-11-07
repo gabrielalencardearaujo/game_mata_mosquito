@@ -1,0 +1,119 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    cursor: url('../imagens/mata_mosca.png') 30 30, auto; /*Não sei o porque do auto*/
+}
+body{
+    background-image: url('../imagens/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.painel{
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 190px;
+    padding: 10px;
+    border: 1px solid #fff;
+    background-color: rgba(255, 255, 255, .7)
+}
+
+.container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.start{
+    width: 100%;
+    text-align: center;
+}
+
+select{
+    height: 3em;
+    width: 170px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn{
+    background-color: green;
+    padding: 20px;
+    font-size: 2em;
+    border: none;
+    border-radius: 10px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    color: white;
+    margin-top: 100px;
+}
+
+.btn-game{
+    margin-top: 20px;
+}
+
+.btn:hover{
+    outline: 1px solid white;
+    cursor: url('../imagens/mata_mosca.png') 30 30, auto; /*Não sei o porque do auto*/
+
+}
+
+/*---------------------------------------------------------------------------------------------
+-----------------------CLASSES PARA IMPLEMENTAÇÃO DA LÓGICA JS DO GAME.------------------------
+---------------------------------------------------------------------------------------------*/
+.mosca1{
+    width: 60px;
+    height: 60px;
+}
+
+.mosca2{
+    width: 80px;
+    height: 80px;
+}
+
+.mosca3{
+    width: 100px;
+    height: 100px;
+}
+
+.ladoA{
+    transform: scaleX(1);
+}
+
+.ladoB{
+    transform: scaleX(-1);
+}
+
+.gameover{
+    color: red;
+    font-size: 9em;
+    font-weight: 900;
+    text-shadow: 0px 0px 15px rgba(0, 0, 0, .8);
+}
+
+.winner{
+    color: blue;
+    font-size: 9em;
+    font-weight: 900;
+    text-align: center;
+    text-shadow: 0px 0px 15px rgba(0, 0, 0, .8);
+    width: 100%;
+}
+
+.autor{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        //Iniciando o game
+        function start_game(){
+            let level = document.querySelector('#level').value
+
+            if(level === ''){
+                alert('Seleciona um nível para começar!')
+            }else{
+                window.location.href= 'app.html?' + level
+            }
+        }
+    </script>
+    <title>Mata Moscas</title>
+</head>
+<body>
+
+    <div class="container index">
+        <img class='image_game' src="imagens/game.png" alt="">
+
+        <div class="start">
+            <div class="start">
+                <select id="level">
+                    <option value="">-- Selecionar um nível --</option>
+                    <option value="normal">Normal</option>
+                    <option value="hard">Difícil</option>
+                    <option value="rambo">Rambo</option>
+                </select>
+            </div>
+            <button class="btn btn-game" onclick="start_game()"> INICIAR </button>
+        </div>
+    </div>
+
+    <div class="autor">
+        <h6>FEITO POR GABRIEL ALENCAR</h6>
+    </div>
+
+</body>
+</html>

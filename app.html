@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Mate as Moscas</title>
+</head>
+<body onresize="resize()"> <!-- onresize aciona a função sempre que as dimensões do body são redimensionadas-->
+    
+    <div class="painel">
+        <div class="vidas">
+            <img id="v3" src="imagens/coracao_cheio.png" alt="">
+            <img id="v2" src="imagens/coracao_cheio.png" alt="">
+            <img id="v1" src="imagens/coracao_cheio.png" alt="">
+        </div>
+        <div class="cronometro">Tempo Restante: <span id="cronometro"></span> </div>
+    </div>
+    <script src="js/jogo.js"></script>
+    <script>
+        document.querySelector('#cronometro').innerHTML = tempo //Necessário para o cronometro começar a mostrar logo antes do primeiro decrêscimo.
+    </script>
+</body>
+</html>
